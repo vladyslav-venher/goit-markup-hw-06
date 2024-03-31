@@ -122,31 +122,35 @@ address {
 
 .hero {
     background-color: #2E2F42;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-image.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-image-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     max-width: 1440px;
-    margin: 0 auto;
-    padding-top: 188px;
-    padding-bottom: 188px;
 }
 
 .hero-wrap {
     display: flex;
     flex-direction: column;
+    padding: 72px 52px;
+}
+
+@media screen and (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-image-mob.jpg);
+    }
 }
 
 .hero-title {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     color: #FFF;
-    margin-bottom: 48px;
-    max-width: 496px;
+    margin-bottom: 72px;
+    max-width: 216px;
     align-self: center;
 }
 
@@ -826,6 +830,23 @@ address {
     }
 
 
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-image-tab.jpg);
+    }
+
+    .hero-wrap {
+        padding: 112px 136px;
+    }
+
+    .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        margin-bottom: 36px;
+        max-width: 496px;
+    }
+
+
+
     .features-list {
         gap: 72px 24px;
     }
@@ -849,6 +870,7 @@ address {
         padding-right: 15px;
     }
 
+
     .logo {
         margin-right: 76px;
     }
@@ -862,6 +884,20 @@ address {
         font-size: 16px;
         line-height: 1.5;
     }
+
+
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-image.jpg);
+    }
+
+    .hero-wrap {
+        padding: 188px 472px;
+    }
+
+    .hero-title {
+        margin-bottom: 48px;
+    }
+
 
     .features {
         padding-top: 120px;
