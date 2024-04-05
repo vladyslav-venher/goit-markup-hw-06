@@ -411,8 +411,6 @@ address {
     display: flex;
     gap: 24px;
     justify-content: center;
-    padding-right: 16px;
-    padding-left: 16px;
 }
 
 .team-list-icon {
